@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ng-repeat directive example</title>
+	<script type="text/javascript" src="../angular.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+</head>
+<body data-ng-app="myApp">
+
+	<div  data-ng-controller="myController">
+	<h1>ng-repeat with table</h1>
+	<br>
+		<table>
+
+			<tr>
+				<th>Name</th>
+				<th>Department</th>
+				<th>Gender</th>
+				<th>Salary</th>
+			</tr>
+				
+			<tr data-ng-repeat="employee in employees">
+				<td>{{employee.name}}</td>
+				<td>{{employee.department}}</td>
+				<td>{{employee.gender}}</td>
+				<td>{{employee.salary}}</td>
+			</tr>
+
+		</table>
+
+		<h1>ng-repeat with UL LI</h1>
+		<br>
+		<div style="display: inline-block;">
+			<ul>
+				<li style="display:inline;padding: 25px;"><strong>Name</stront></li>
+				<li style="display:inline;padding: 25px;"><strong>Department</strong></li>
+				<li style="display:inline;padding: 25px;"><strong>Gender</strong></li>
+				<li style="display:inline;padding: 25px;"><strong>Salary</strong></li>
+			</ul>
+			<ul data-ng-repeat="employee in employees">
+				<li style="display:inline;padding: 25px;">{{employee.name}}</li>
+				<li style="display:inline;padding: 25px;">{{employee.department}}</li>
+				<li style="display:inline;padding: 25px;">{{employee.gender}}</li>
+				<li style="display:inline;padding: 25px;">{{employee.salary}}</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
