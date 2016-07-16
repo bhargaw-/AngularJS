@@ -17,6 +17,7 @@ Angular js is a javascript framework that helps build web applications
 
 <strong>How to create a module?</strong><br>
 	Use the angular object's module() method to create a module.
+		
 		Eg: var myApp = angular.moduel('myModule',[]);
 
 <strong>What is a controller in angular?</strong><br>
