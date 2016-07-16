@@ -49,4 +49,16 @@ Angular js is a javascript framework that helps build web applications
 		</ul>
 	</ul>
 
+<strong>Handling Events</strong>
+
+	Eg: <input type="button" value="Like" data-ng-click="incrementLikes(technology)"></input> 
+		<input type="button" value="Dislike" data-ng-click="incrementDislikes(technology)"></input>
+
+		$scope.incrementLikes = function(technology){
+			technology.likes+=1;
+		}
+
+		$scope.incrementDislikes = function(technology){
+			technology.dislikes+=1;
+		}
 
