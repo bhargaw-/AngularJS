@@ -1,8 +1,5 @@
-
-
 // creating module
 var myApp = angular.module('myApp', []);
-
 
 // creating controller
 var myController = function($scope){
@@ -11,7 +8,6 @@ var myController = function($scope){
 
 // registring controller with module
 myApp.controller('myController',myController);
-
 
 /*
 // creation of module, cotroller and registring controller with module in singel statement
