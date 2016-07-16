@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Two way binding example</title>
+	<script type="text/javascript" src="../angular.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+</head>
+<body data-ng-app="myApp">
+	<div data-ng-controller="myController">
+		
+		<label>Name : </label>
+		<input type="text" data-ng-model="person.name">
+		<label>Age : </label>
+		<input type="text" data-ng-model="person.age">
+		<label>Gender : </label>
+		<input type="text" data-ng-model="person.gender">
+		<br>
+		<strong>Name</strong> {{person.name}}<br>
+		<strong>Age</strong> {{person.age}}<br>
+		<strong>Gender</strong> {{person.gender}}
+	</div>
+</body>
+</html>
