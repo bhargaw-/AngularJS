@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ng-repeat directive example</title>
+	<script type="text/javascript" src="../angular.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+</head>
+<body data-ng-app="myApp">
+
+	<div  data-ng-controller="myController">	
+				
+		<ul>
+			<li data-ng-repeat="country in countries" data-ng-init="parentIndex=$index">
+				{{country.name}} &nbsp;&nbsp;&nbsp; Index = {{$index}}
+				<ul>
+					<li ng-repeat="city in country.cities">
+						<!-- {{city.name}} &nbsp;&nbsp;&nbsp; Parent Index = {{$parent.$index}} &nbsp;&nbsp;&nbsp;Index = {{$index}} -->
+						{{city.name}} &nbsp;&nbsp;&nbsp; Parent Index = {{parentIndex}} &nbsp;&nbsp;&nbsp;Index = {{$index}}
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+	</div>
+
+</body>
+</html>
