@@ -9,8 +9,7 @@
 <body data-ng-app="myApp">
 
 	<div  data-ng-controller="myController">
-	<h1>ng-repeat with table</h1>
-	<br>
+		
 		<table>
 
 			<tr>
@@ -29,22 +28,6 @@
 
 		</table>
 
-		<h1>ng-repeat with UL LI</h1>
-		<br>
-		<div style="display: inline-block;">
-			<ul>
-				<li style="display:inline;padding: 25px;"><strong>Name</stront></li>
-				<li style="display:inline;padding: 25px;"><strong>Department</strong></li>
-				<li style="display:inline;padding: 25px;"><strong>Gender</strong></li>
-				<li style="display:inline;padding: 25px;"><strong>Salary</strong></li>
-			</ul>
-			<ul data-ng-repeat="employee in employees">
-				<li style="display:inline;padding: 25px;">{{employee.name}}</li>
-				<li style="display:inline;padding: 25px;">{{employee.department}}</li>
-				<li style="display:inline;padding: 25px;">{{employee.gender}}</li>
-				<li style="display:inline;padding: 25px;">{{employee.salary}}</li>
-			</ul>
-		</div>
 	</div>
 
 </body>

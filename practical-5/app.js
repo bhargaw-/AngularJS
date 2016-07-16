@@ -40,5 +40,5 @@ angular.module('myApp',[]).
 			}
 		];
 
-		$scope.employees = employees;
+	$scope.employees = employees;
 	});
