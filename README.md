@@ -39,6 +39,14 @@ Angular js is a javascript framework that helps build web applications
 			<li>select</li>
 			<li>textarea</li>
 		</ul>
-
+<strong>Finding the index of an item in the collection : </strong>
+	<ul>
+		<li>Use <strong>$index</strong></li>
+		<li>Get index of parent element</li>
+		<ul>
+			<li>Use <strong>$parent.$index</strong></li>
+			<li>Use <strong>ng-init="parentIndex=$index"</strong></li>
+		</ul>
+	</ul>
 
 
