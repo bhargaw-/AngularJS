@@ -29,4 +29,12 @@ Angular js is a javascript framework that helps build web applications
 
 <strong>Two way data binding:</strong><br>
 	Keeps the model and view in syc at all the time, that is a change in the model updates the view and a change in the view updates the model.
+	<strong>ng-model</strong> directive can be used with <br>
+		<ul>
+			<li>input</li>
+			<li>select</li>
+			<li>textarea</li>
+		</ul>
+
+
 
