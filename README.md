@@ -18,7 +18,7 @@ Angular js is a javascript framework that helps build web applications
 <strong>How to create a module?</strong><br>
 	Use the angular object's module() method to create a module.
 		
-		Eg: var myApp = angular.moduel('myModule',[]);
+	Eg: var myApp = angular.moduel('myModule',[]);
 
 <strong>What is a controller in angular?</strong><br>
 	In angular a controller is a Javascript function. The job of the controller is to build a model for the view to display.
@@ -26,6 +26,10 @@ Angular js is a javascript framework that helps build web applications
 	Eg: var myController = function($scope){
 		$scope.message = "Hello World!!";
 	}
+
+<strong>Register controller with module</strong><br>
+	
+	Eg: myApp.controller('myController',myController);
 
 <strong>Two way data binding:</strong><br>
 	Keeps the model and view in syc at all the time, that is a change in the model updates the view and a change in the view updates the model.
