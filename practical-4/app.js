@@ -1,5 +1,6 @@
 angular.module('myApp',[]).
 	controller('myController', function($scope){
+		
 		var person = {
 			name : "Bhargav",
 			age : 29,
@@ -7,4 +8,4 @@ angular.module('myApp',[]).
 		};
 
 		$scope.person = person;	
-	})
+	});
