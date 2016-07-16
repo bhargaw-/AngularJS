@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<script type="text/javascript" src="../angular.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+	<div data-ng-app="myApp" data-ng-controller="myController">
+		{{message}} <br>or <br><span data-ng-bind="message"></span>
+		<br>
+		{{['Zero','One','Two'][2]}}
+		<br>
+		<span>10+20 = {{10+20}}</span>
+	</div>
+
+</body>
+</html>
