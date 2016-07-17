@@ -53,11 +53,4 @@ angular.module('myApp',[]).
 		$scope.columnName = columnName;
 		$scope.reverseOrder = !$scope.reverseOrder;
 	}
-
-	if($scope.reverseOrder){
-		$scope.cssClass ='arrowUp';
-	}else{
-		$scope.cssClass ='arrowDown';
-	}
-
 });
