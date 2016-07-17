@@ -62,3 +62,11 @@ Angular js is a javascript framework that helps build web applications
 			technology.dislikes+=1;
 		}
 
+
+<strong>Filters  </strong> <br>
+	
+Filters can do 3 different(Formate, Sort and Filter data) things. <br>
+Filters can be used with a binding expression or a directive.
+To apply filter use pipe(|) character.
+	
+	syntax: {{expression | filterName:parameter}}
