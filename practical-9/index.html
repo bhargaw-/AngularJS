@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ng-repeat directive example</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript" src="../angular.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+</head>
+<body data-ng-app="myApp">
+
+	<div  data-ng-controller="myController">
+
+		<label>No.of rows to display :</label>
+		<input type="number" data-ng-model='rowLimit' step="1" min="0" max="5">
+		<br><br>		
+		<table>
+
+			<tr>
+				<th>Name</th>
+				<th>Department</th>
+				<th>Date of join</th>
+				<th>Gender</th>
+				<th>Salary</th>
+			</tr>
+				
+				<tr data-ng-repeat="employee in employees | limitTo : rowLimit"> <!-- Row starts from 0th index -->
+			<!-- <tr data-ng-repeat="employee in employees | limitTo : rowLimit : 2"> --> <!-- Row starts from 2nd index -->
+				<td>{{employee.name}}</td>
+				<td>{{employee.department}}</td>
+				<td>{{employee.date | date : "dd/MM/yyyy"}}</td>
+				<td>{{employee.gender | uppercase}}</td>
+				<!-- <td>{{employee.salary | number : 2}}</td> -->
+				<!-- <td>{{employee.salary | currency}}</td> -->
+				<td>{{employee.salary | currency : "£": 1 }}</td>
+			</tr>
+
+		</table>
+
+	</div>
+
+</body>
+</html>
