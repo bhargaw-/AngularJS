@@ -1,0 +1,31 @@
+table {
+	border-collapse: collapse;
+	font-family: arial;
+}
+
+td {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+th {
+	border: 1px solid black;
+	padding: 5px;
+	text-align: middle;
+}
+
+.arrowUp {
+	height: 0px;
+	width: 0px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid black;
+}
+
+.arrowDown {
+	height: 0px;
+	width: 0px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid black;
+}

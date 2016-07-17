@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>sorting example</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript" src="../angular.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+</head>
+<body data-ng-app="myApp">
+
+	<div  data-ng-controller="myController">
+
+		<table>
+
+			<tr>
+				<th data-ng-click="sortColumn('name')"><a href="javascript:;">Name</a></th>
+				<th data-ng-click="sortColumn('department')"><a href="javascript:;">Department</a></th>
+				<th data-ng-click="sortColumn('date')"><a href="javascript:;">Date of join</a></th>
+				<th data-ng-click="sortColumn('gender')"><a href="javascript:;">Gender</a></th>
+				<th data-ng-click="sortColumn('salary')"><a href="javascript:;">Salary</a></th>
+			</tr>
+			
+			<tr data-ng-repeat="employee in employees  | orderBy : columnName : reverseOrder "> 
+				<td>{{employee.name}}</td>
+				<td>{{employee.department}}</td>
+				<td>{{employee.date | date : "dd/MM/yyyy"}}</td>
+				<td>{{employee.gender | uppercase}}</td>
+				<td>{{employee.salary | currency : "£": 1 }}</td>
+			</tr>
+
+		</table>
+
+	</div>
+
+</body>
+</html>
