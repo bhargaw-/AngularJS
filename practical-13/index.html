@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Filtering example</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript" src="../angular.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+</head>
+<body data-ng-app="myApp">
+
+	<!-- <div  data-ng-controller="myController">
+
+		<input type="text" ng-model="searchText.name" placeholder="Enter name">
+		<input type="text" ng-model="searchText.salary" placeholder="Enter salary">
+		<input type="checkbox" ng-model="exactMatch"> <label>Exact Match</label>
+		<br><br>
+		<table>
+
+			<tr>
+				<th>Name</th>
+				<th>Department</th>
+				<th>Date of join</th>
+				<th>Gender</th>
+				<th>Salary</th>
+			</tr>
+			
+			<tr data-ng-repeat="employee in employees | filter : searchText : exactMatch"> 
+				<td>{{employee.name}}</td>
+				<td>{{employee.department}}</td>
+				<td>{{employee.date | date : "dd/MM/yyyy"}}</td>
+				<td>{{employee.gender | uppercase}}</td>
+				<td>{{employee.salary | currency : "£": 1 }}</td>
+			</tr>
+
+		</table>
+
+	</div> -->
+
+	<div  data-ng-controller="myController">
+
+		<input type="text" ng-model="searchText" placeholder="Enter employee">		
+		<br><br>
+		<table>
+
+			<tr>
+				<th>Name</th>
+				<th>Department</th>
+				<th>Date of join</th>
+				<th>Gender</th>
+				<th>Salary</th>
+			</tr>
+			
+			<tr data-ng-repeat="employee in employees | filter : search"> 
+				<td>{{employee.name}}</td>
+				<td>{{employee.department}}</td>
+				<td>{{employee.date | date : "dd/MM/yyyy"}}</td>
+				<td>{{employee.gender | uppercase}}</td>
+				<td>{{employee.salary | currency : "£": 1 }}</td>
+			</tr>
+
+		</table>
+
+	</div>
+
+</body>
+</html>
