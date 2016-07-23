@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ng-show ng-hide example</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript" src="../angular.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+</head>
+<body data-ng-app="myApp">
+
+<div data-ng-controller="myController">
+	<label>Hide Salary</label>
+	<input type="checkbox" data-ng-model='hideSal'>
+	<table>
+		<tr>
+			<thead>
+				<th>Name</th>
+				<th>Gender</th>
+				<!-- <th  data-ng-hide="hideSal">Salary</th> -->
+				<th  data-ng-show="!hideSal">Salary</th>
+			</thead>
+		</tr>
+		<tr data-ng-repeat="employee in employees">
+			<td>{{employee.name}}</td>
+			<td>{{employee.gender}}</td>
+			<!-- <td data-ng-hide="hideSal">{{employee.salary | currency : '$' : number}}</td> -->
+			<td data-ng-show="!hideSal">{{employee.salary | currency : '$' : number}}</td>
+		</tr>
+
+	</table>
+	<br>
+	<table>
+		<tr>
+			<thead>
+				<th>Name</th>
+				<th>Gender</th>
+				<th  data-ng-hide="hideSal">Salary</th>
+				<th  data-ng-show="hideSal">Salary</th>
+			</thead>
+		</tr>
+		<tr data-ng-repeat="employee in employees">
+			<td>{{employee.name}}</td>
+			<td>{{employee.gender}}</td>
+			<td data-ng-hide="hideSal"> ######</td> 
+			<td data-ng-show="hideSal">{{employee.salary | currency : '$' : number}}</td>
+		</tr>
+
+	</table>
+
+
+</div>
+
+</body>
+</html>
