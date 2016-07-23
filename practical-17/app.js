@@ -46,7 +46,6 @@ angular.module('myApp',[]).
 		];
 
 	$scope.employees = employees;
-
 	$scope.employeeList = "./employee-list.html";
 	
 });
