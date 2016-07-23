@@ -70,3 +70,12 @@ Filters can be used with a binding expression or a directive.
 To apply filter use pipe(|) character.
 	
 	syntax: {{expression | filterName:parameter}}
+
+
+<strong>ng-init  directive </strong> <br>
+	<ul>
+		<li>ng-init directive allows you to evaluate an expression in current scope</li>
+		<li>In real world, should use a contoller to initialize values on a scope instead of ng-init</li>
+		<li>ng-init should only be used for aliasing special properties of ng-repeat directive</li>
+	</ul>
+	
