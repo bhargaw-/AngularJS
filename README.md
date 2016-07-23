@@ -79,3 +79,16 @@ To apply filter use pipe(|) character.
 		<li>ng-init should only be used for aliasing special properties of ng-repeat directive</li>
 	</ul>
 	
+<strong>ng-include  directive </strong> <br>
+	<ul>
+		<li> directive is used to embed an HTML page into another HTML page. This techinique is very useful when you want to reuse a specific view in multiple pages in your application.
+		</li>
+		<li> <strong>value for ng-include directive is, name of the another HTML page that you want to reuse</strong>
+
+		Eg: <div ng-include = "employee-list.html"> </div>
+
+				or
+
+			<div ng-include = "employeeList"> </div> (A property on the $scope object that points to the reusable HTML page)
+
+
