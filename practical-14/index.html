@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom filter example</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript" src="../angular.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+	<script type="text/javascript" src="./filter.js"></script>
+</head>
+<body data-ng-app="myApp">
+
+<div data-ng-controller="myController">
+	
+	<table>
+		<tr>
+			<thead>
+				<th>Name</th>
+				<th>Gender</th>
+				<th>Salary</th>
+			</thead>
+		</tr>
+		<tr data-ng-repeat="employee in employees">
+			<td>{{employee.name | name}}</td>
+			<td>{{employee.gender | gender}}</td>
+			<td>{{employee.salary | currency : '$' : number}}</td>
+		</tr>
+
+	</table>
+
+</div>
+
+</body>
+</html>
