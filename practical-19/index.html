@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>$http example</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript" src="../angular.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+</head>
+<body data-ng-app="myApp">
+
+	<div  data-ng-controller="myController">
+
+		<table>
+
+			<tr>
+				<th>Name</th>
+				<th>Department</th>
+				<th>Date of join</th>
+				<th>Gender</th>
+				<th>Salary</th>
+			</tr>
+			
+			<tr data-ng-repeat="employee in employees"> 
+				<td>{{employee.name}}</td>
+				<td>{{employee.department}}</td>
+				<td>{{employee.date | date : "dd/MM/yyyy"}}</td>
+				<td>{{employee.gender | uppercase}}</td>
+				<td>{{employee.salary | currency : "£": 1 }}</td>
+			</tr>
+
+		</table>
+
+	</div>
+
+</body>
+</html>
