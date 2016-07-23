@@ -14,10 +14,10 @@
 		<label>Select view type</label>
 		<select ng-model="viewType">
 			<option value="">--select--</option>
-			<option value="employee-list (table).html"> Table </option>
-			<option value="employee-list (ul).html"> UL </option>
+			<option value="employee-list-table.html"> Table </option>
+			<option value="employee-list-listview.html"> List </option>
 		</select>
-
+		<br><br>	
 		<div ng-include="viewType"></div>
 	</div>
 

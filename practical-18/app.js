@@ -45,8 +45,5 @@ angular.module('myApp',[]).
 			}
 		];
 
-	$scope.employees = employees;
-	var page = $scope.viewType == 'table' ? './employee-list (table).html': $scope.viewType == 'ul' ? './employee-list (ul).html':'';
-	$scope.employeeList = page;
-	
+	$scope.employees = employees;	
 });

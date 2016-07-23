@@ -1,0 +1,13 @@
+<ul>
+
+	<li ng-repeat="employee in employees">
+		{{employee.name}}
+			<ul>
+				<li>{{employee.department}}</li>
+				<li>{{employee.date | date : "dd/MM/yyyy"}}</li>
+				<li>{{employee.gender | uppercase}}</li>
+				<li>{{employee.salary | currency : "£": 1 }}</li>
+			</ul>
+	</li>
+
+</ul>
