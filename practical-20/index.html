@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Custom service example</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript" src="../angular.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+	<script type="text/javascript" src="./stringService.js"></script>
+</head>
+<body data-ng-app="myApp">	
+
+	<div  data-ng-controller="myController">
+	<table>
+		<tbody>
+			<tr>
+				<td> Input String </td>
+				<td> <input type="text" name="inputString" ng-model="input">
+			</tr>
+			<tr>
+				<td> Output String </td>
+				<td> <input type="text" name="outputString" ng-model="output">
+			</tr>
+			<tr>
+				<td>  </td>
+				<td> <input type="button" name="" value="Process String" ng-click="processString(input);"></button>
+			</tr>
+		</tbody>
+	</table>
+			
+		
+	</div>
+
+</body>
+</html>
