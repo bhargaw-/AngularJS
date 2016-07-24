@@ -91,4 +91,32 @@ To apply filter use pipe(|) character.
 
 			<div ng-include = "employeeList"> </div> (A property on the $scope object that points to the reusable HTML page)
 
+<strong>$http service in angular</strong>
+<br>
+<ul>
+	<li> $http service is used to make HTTP request to remote server </li>
+	<li> $http service is funtion that has single input parameter i.e configuration object.</li>
+</ul>
+	
+	Eg: $http({
+			method : "GET",
+			url : '/employee.json'
+		});
 
+If the data property of the request configuration object contains a javascript object, it is automatically converted into JSON object.
+<br>
+
+<strong>What is a service in angular?</strong><br>
+A service in angular is simply an object that provides some sort of service that can be reused with in an angular application.
+<br>
+
+<strong>Why do we need services?</strong><br>
+Services encapsulates reusable logic that does not belong anywhere else (i.e Directives, Filters, Views, Models & Controllers)
+<br>
+
+<strong>what are the benifits of using services?</strong><br>
+<ul> 
+	<li>Reusability</li>
+	<li>Dependancy Injection</li>
+	<li>Testability</li>
+</ul>
