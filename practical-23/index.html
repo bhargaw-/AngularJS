@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Routing tutorial</title>
+	<script type="text/javascript" src="../angular.js"></script>
+    <script type="text/javascript" src="../angular-route.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+    <style>
+    table {
+        position: relative;
+        margin: 0px auto;   
+        width: 100%;   
+        border-collapse: collapse;
+        text-align: center;
+    }
+    </style>
+</head>
+<body data-ng-app="myApp">
+    <table border="solid">
+        <tr>
+            <td style="background:#95a5a6;"><h1>Heading</h1></td>
+        </tr>
+        <tr>
+            <td style="background:#CCEEFF;">
+                <table border="solid">
+                    <tr>
+                        <td style="width:30%;background:CCEEFF;">
+                            <ul>
+                                <li> <a href="#/home">Home</a> </li>
+                                <li> <a href="#/cources">Cources</a> </li>
+                                <li> <a href="#/students">Students</a> </li>
+                            </ul>
+                        </td>
+                        <td style="background:CCEEFF;">
+                            <ng-view></ng-view>
+                        </td>
+                    </tr>
+                </table>
+            </td>            
+        </tr>
+        <tr>
+        <tr>
+            <td style="background:#95a5a6;height:45px;">footer</td>
+        </tr> 
+    </table>
+</body>
+</html>
